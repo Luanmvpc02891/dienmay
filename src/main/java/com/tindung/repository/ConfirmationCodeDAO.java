@@ -1,4 +1,4 @@
-package com.nhutin.electric_project.repository;
+package com.tindung.repository;
 
 import java.sql.Timestamp;
 import java.util.Optional;
@@ -8,7 +8,9 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.nhutin.electric_project.model.ConfirmationCode;
+import com.tindung.service.*;
+import com.tindung.repository.*;
+import com.tindung.model.*;
 
 public interface ConfirmationCodeDAO extends JpaRepository<ConfirmationCode, Integer> {
     Optional<ConfirmationCode> findByOTPCode(String oTPCode);
@@ -23,15 +25,15 @@ public interface ConfirmationCodeDAO extends JpaRepository<ConfirmationCode, Int
     @Transactional
     @Modifying
     @Query("UPDATE ConfirmationCode c " +
-                    "SET c.isConfirmed = ?2 " +
-                    "WHERE c.OTPCode = ?1")
+            "SET c.isConfirmed = ?2 " +
+            "WHERE c.OTPCode = ?1")
     int updateConfirmed(String token,
-                    Boolean isConfirm);
+            Boolean isConfirm);
 
     @Modifying
     @Query("UPDATE ConfirmationCode c SET c.OTPCode = ?1, c.isConfirmed = ?2, c.OTPCreationDate = ?3, c.OTPExpirationDate = ?4 WHERE c.userID = ?5")
     void updateCodeOTP(String OTPCode, boolean isConfirmed, Timestamp OTPCreationDate, Timestamp OTPExpirationDate,
-                    int userID);
+            int userID);
 
     @Modifying
     @Query("UPDATE ConfirmationCode c SET c.isConfirmed = ?1 WHERE c.userID = ?2")
@@ -45,4 +47,3 @@ public interface ConfirmationCodeDAO extends JpaRepository<ConfirmationCode, Int
 
     ConfirmationCode findByUserIDLike(int userID);
 }
-

@@ -20,6 +20,13 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
 import org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices;
 import org.springframework.web.util.UrlPathHelper;
+import com.tindung.service.*;
+import com.tindung.repository.*;
+import com.tindung.security.handler.CustomAuthenticationFailureHandler;
+import com.tindung.security.handler.OAuth2LoginSuccessHandler;
+import com.tindung.security.service.CustomOAuth2UserService;
+import com.tindung.model.*;
+import com.tindung.ServiceImpl.*;
 
 @Configuration
 @EnableWebSecurity
@@ -66,7 +73,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         String role = authentication.getAuthorities().toString();
         if (role.contains("ADMIN")) {
             return "/admin/index";
-        }else if (role.contains("STAFF")) {
+        } else if (role.contains("STAFF")) {
             return "/admin/index";
         } else {
             return "/home";
@@ -83,7 +90,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         .antMatchers("/assets/**", "/", "logout", "/login**", "/home", "/shop/**",
                                 "/error**", "/api/**", "/reset-password", "/codeVerification", "/resendOtp",
                                 "/new-password", "/rest/productdetails", "/rest/products", "/rest/productsbycate/**",
-                                "/rest/products/**", "/rest/**", "/product", "/registration/**", "/oauth2/**", "/news","/about","/detail/**","/cart")
+                                "/rest/products/**", "/rest/**", "/product", "/registration/**", "/oauth2/**", "/news",
+                                "/about", "/detail/**", "/cart")
                         .permitAll()
                         .antMatchers("/admin/**", "/rest/orders/**")
                         .hasAnyRole("ADMIN", "STAFF")

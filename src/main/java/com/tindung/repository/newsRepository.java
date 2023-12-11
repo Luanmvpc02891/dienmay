@@ -1,9 +1,11 @@
-package com.nhutin.electric_project.repository;
+package com.tindung.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.nhutin.electric_project.model.New;
+import com.tindung.service.*;
+import com.tindung.repository.*;
+import com.tindung.model.*;
 
-public interface newsRepository extends JpaRepository<New, Integer>  {
- 
+public interface newsRepository extends JpaRepository<New, Integer> {
+
 }
