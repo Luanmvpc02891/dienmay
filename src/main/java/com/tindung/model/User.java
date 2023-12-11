@@ -285,7 +285,7 @@ public class User implements Serializable {
 	}
 
 	public User(String username, String fullname, Boolean gender, Date birthday, String email, String phonenumber,
-			String password,String address, Role role) {
+			String password, Role role) {
 		this.username = username;
 		this.fullName = fullname;
 		this.gender = gender;
@@ -293,7 +293,6 @@ public class User implements Serializable {
 		this.email = email;
 		this.phoneNumber = phonenumber;
 		this.password = password;
-		this.address = address;
 		this.role = role;
 	}
 

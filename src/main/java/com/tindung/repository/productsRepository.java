@@ -8,9 +8,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.tindung.model.Product;
-
-
+import com.tindung.service.*;
+import com.tindung.repository.*;
+import com.tindung.model.*;
 
 public interface productsRepository extends JpaRepository<Product, Integer> {
         List<Product> findAll();

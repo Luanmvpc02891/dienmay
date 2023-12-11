@@ -6,9 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.tindung.model.OrderDetail;
-
-
+import com.tindung.service.*;
+import com.tindung.repository.*;
+import com.tindung.model.*;
 
 public interface orderDetailsRepository extends JpaRepository<OrderDetail, Integer> {
 

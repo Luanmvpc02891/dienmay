@@ -8,10 +8,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
-
-import com.tindung.model.ConfirmationCode;
-import com.tindung.model.User;
-
+import com.tindung.service.*;
+import com.tindung.repository.*;
+import com.tindung.model.*;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
         @Query("SELECT s FROM User s WHERE s.username = ?1")

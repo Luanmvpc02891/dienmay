@@ -2,7 +2,9 @@ package com.tindung.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.tindung.model.Reply;
+import com.tindung.service.*;
+import com.tindung.repository.*;
+import com.tindung.model.*;
 
 public interface ReplyDao extends JpaRepository<Reply, Integer> {
 

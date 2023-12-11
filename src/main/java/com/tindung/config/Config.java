@@ -12,6 +12,11 @@ import org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver;
 import org.springframework.web.servlet.i18n.CookieLocaleResolver;
 import org.springframework.web.servlet.i18n.LocaleChangeInterceptor;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
+import com.tindung.service.*;
+import com.tindung.repository.*;
+import com.tindung.model.*;
+import com.tindung.GlobalInterceptor;
+import com.tindung.ServiceImpl.*;
 
 @Configuration
 public class Config implements WebMvcConfigurer {
@@ -24,7 +29,7 @@ public class Config implements WebMvcConfigurer {
                 .addResourceLocations("classpath:/static/", "classpath:/templates/");
     }
 
-      @Bean
+    @Bean
     public LocaleResolver localeResolver() {
         SessionLocaleResolver resolver = new SessionLocaleResolver();
         resolver.setDefaultLocale(new Locale("vi")); // Đặt ngôn ngữ mặc định
