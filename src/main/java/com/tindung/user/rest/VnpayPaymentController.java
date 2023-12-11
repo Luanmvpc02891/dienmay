@@ -31,6 +31,8 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.tindung.config.CookieUtils;
+import com.tindung.config.VnpayConfig;
+import com.tindung.model.Order;
 import com.tindung.model.PaymentQR;
 import com.tindung.repository.UserRepository;
 import com.tindung.repository.ordersRepository;

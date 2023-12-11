@@ -18,7 +18,6 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.tindung.service.*;
 import com.tindung.repository.*;
 import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
 
 @CrossOrigin("*")
 @RestController

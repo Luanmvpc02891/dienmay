@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.tindung.service.*;
-import com.tindung.repository.*;
-import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
+import com.tindung.model.Order;
+import com.tindung.model.OrderDetail;
+import com.tindung.repository.orderDetailsRepository;
+import com.tindung.repository.ordersRepository;
 
 @Controller
 @RequestMapping("admin")

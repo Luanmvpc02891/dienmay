@@ -24,6 +24,7 @@ import com.tindung.model.ConfirmationCode;
 import com.tindung.model.User;
 import com.tindung.repository.ConfirmationCodeDAO;
 import com.tindung.repository.UserRepository;
+import com.tindung.service.MailerService;
 
 
 

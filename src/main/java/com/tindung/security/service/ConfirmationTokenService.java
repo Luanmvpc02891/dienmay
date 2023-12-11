@@ -1,4 +1,4 @@
-package com.nhutin.electric_project.security.service;
+package com.tindung.security.service;
 
 import java.util.Optional;
 
@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 
 import com.tindung.service.*;
 import com.tindung.repository.*;
+import com.tindung.Impl.*;
 import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
 
 import lombok.AllArgsConstructor;
 

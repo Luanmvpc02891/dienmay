@@ -15,9 +15,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.tindung.model.Brand;
 import com.tindung.model.Product;
 import com.tindung.model.Promotion;
+import com.tindung.model.Supplier;
 import com.tindung.repository.productsRepository;
+import com.tindung.service.ProductsService;
 
 @CrossOrigin("*")
 @RestController

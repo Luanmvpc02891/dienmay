@@ -26,8 +26,6 @@ import com.tindung.security.handler.CustomAuthenticationFailureHandler;
 import com.tindung.security.handler.OAuth2LoginSuccessHandler;
 import com.tindung.security.service.CustomOAuth2UserService;
 import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
-
 import com.tindung.repository.UserRepository;
 import com.tindung.repository.cartsRepository;
 

@@ -15,6 +15,7 @@ import com.tindung.model.Category;
 import com.tindung.model.Promotion;
 import com.tindung.repository.categorysRepository;
 import com.tindung.repository.prmotionRepositpry;
+import com.tindung.service.CategorysService;
 
 
 @CrossOrigin("*")

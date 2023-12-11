@@ -15,10 +15,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import com.tindung.service.*;
-import com.tindung.repository.*;
-import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
+
+import com.tindung.model.Promotion;
+import com.tindung.model.Promotion_Historie;
+import com.tindung.repository.prmotionHistoryRepositpry;
+import com.tindung.repository.prmotionRepositpry;
 
 @Controller
 @RequestMapping("admin")

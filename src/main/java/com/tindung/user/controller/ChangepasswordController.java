@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.tindung.model.User;
 import com.tindung.repository.UserRepository;
+import com.tindung.service.MailerService;
 
 
 

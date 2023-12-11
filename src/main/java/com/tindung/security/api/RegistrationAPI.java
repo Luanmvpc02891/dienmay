@@ -7,11 +7,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tindung.service.*;
-import com.tindung.repository.*;
-import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
-import com.tindung.security.service.*;
+import com.tindung.model.RegistrationRequest;
+import com.tindung.security.service.RegistrationService;
+
 import lombok.AllArgsConstructor;
 
 @RestController

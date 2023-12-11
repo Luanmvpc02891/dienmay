@@ -12,10 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.tindung.service.*;
-import com.tindung.repository.*;
-import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
+import com.tindung.repository.brandsRepository;
+import com.tindung.repository.categorysRepository;
+import com.tindung.repository.productsRepository;
 
 @Controller
 @RequestMapping("admin")

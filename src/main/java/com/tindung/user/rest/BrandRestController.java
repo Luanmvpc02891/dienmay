@@ -15,6 +15,7 @@ import com.tindung.model.Product;
 import com.tindung.repository.brandsRepository;
 import com.tindung.repository.categorysRepository;
 import com.tindung.repository.productsRepository;
+import com.tindung.service.BrandsService;
 
 
 
