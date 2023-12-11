@@ -1,9 +1,8 @@
-package com.nhutin.electric_project.repository;
+package com.tindung.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.nhutin.electric_project.model.Reply;
-
+import com.tindung.model.Reply;
 
 public interface ReplyDao extends JpaRepository<Reply, Integer> {
 

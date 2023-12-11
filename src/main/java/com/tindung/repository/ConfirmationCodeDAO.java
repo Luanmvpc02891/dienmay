@@ -1,4 +1,4 @@
-package com.nhutin.electric_project.repository;
+package com.tindung.repository;
 
 import java.sql.Timestamp;
 import java.util.Optional;
@@ -8,7 +8,8 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.nhutin.electric_project.model.ConfirmationCode;
+import com.tindung.model.ConfirmationCode;
+
 
 public interface ConfirmationCodeDAO extends JpaRepository<ConfirmationCode, Integer> {
     Optional<ConfirmationCode> findByOTPCode(String oTPCode);

@@ -1,4 +1,4 @@
-package com.nhutin.electric_project.repository;
+package com.tindung.repository;
 
 import java.math.BigDecimal;
 import java.util.Date;
@@ -8,7 +8,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.nhutin.electric_project.model.Product;
+import com.tindung.model.Product;
+
+
 
 public interface productsRepository extends JpaRepository<Product, Integer> {
         List<Product> findAll();

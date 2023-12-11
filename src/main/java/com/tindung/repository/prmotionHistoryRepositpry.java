@@ -1,11 +1,13 @@
-package com.nhutin.electric_project.repository;
+package com.tindung.repository;
 
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.nhutin.electric_project.model.Promotion_Historie;
+import com.tindung.model.Promotion_Historie;
+
+
 
 public interface prmotionHistoryRepositpry extends JpaRepository<Promotion_Historie, Integer> {
 

@@ -21,6 +21,9 @@ import org.springframework.security.web.authentication.logout.LogoutSuccessHandl
 import org.springframework.security.web.authentication.rememberme.TokenBasedRememberMeServices;
 import org.springframework.web.util.UrlPathHelper;
 
+import com.tindung.repository.UserRepository;
+import com.tindung.repository.cartsRepository;
+
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)

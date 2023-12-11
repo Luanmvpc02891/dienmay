@@ -1,8 +1,10 @@
-package com.nhutin.electric_project.repository;
+package com.tindung.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.nhutin.electric_project.model.Shipping;
+import com.tindung.model.Shipping;
+
+
 
 public interface shippingsRepository extends JpaRepository<Shipping, Integer>{
 

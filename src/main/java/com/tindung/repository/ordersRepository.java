@@ -1,4 +1,4 @@
-package com.nhutin.electric_project.repository;
+package com.tindung.repository;
 
 import java.util.Date;
 import java.util.List;
@@ -7,7 +7,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
-import com.nhutin.electric_project.model.Order;
+import com.tindung.model.Order;
+
+
 
 public interface ordersRepository extends JpaRepository<Order, Integer> {
     @Query("SELECT od.order_detailId, o.name, od.quantity, p.productName, od.price " +
