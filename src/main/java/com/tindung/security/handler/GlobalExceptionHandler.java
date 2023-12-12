@@ -1,4 +1,4 @@
-package com.nhutin.electric_project.security.handler;
+package com.tindung.security.handler;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

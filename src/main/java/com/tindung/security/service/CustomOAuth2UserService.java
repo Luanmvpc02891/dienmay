@@ -1,4 +1,4 @@
-package com.nhutin.electric_project.security.service;
+package com.tindung.security.service;
 
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
