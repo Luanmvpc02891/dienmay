@@ -15,10 +15,9 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.tindung.service.*;
-import com.tindung.repository.*;
-import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
+import com.tindung.model.ConfirmationCode;
+import com.tindung.model.Role;
+import com.tindung.repository.UserRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {

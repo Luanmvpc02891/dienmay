@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import com.tindung.service.*;
 import com.tindung.repository.*;
 import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
 
 @Service
 public class CustomOAuth2UserService extends DefaultOAuth2UserService {

@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.tindung.service.*;
 import com.tindung.repository.*;
 import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
 
 @CrossOrigin("*")
 @RestController

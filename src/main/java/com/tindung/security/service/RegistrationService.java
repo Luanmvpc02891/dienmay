@@ -19,7 +19,6 @@ import com.tindung.model.ConfirmationCode;
 import com.tindung.model.RegistrationRequest;
 import com.tindung.model.User;
 import com.tindung.model.Role;
-import com.tindung.ServiceImpl.*;
 
 import lombok.AllArgsConstructor;
 

@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 import com.tindung.service.*;
 import com.tindung.repository.*;
 import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
+import com.tindung.Impl.*;
 import com.tindung.config.CookieUtils;
 import com.tindung.security.service.*;
 

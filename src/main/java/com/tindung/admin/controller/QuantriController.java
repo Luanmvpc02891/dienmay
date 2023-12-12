@@ -1,7 +1,5 @@
 package com.tindung.admin.controller;
 
-import java.util.List;
-
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +8,13 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.tindung.service.*;
-import com.tindung.repository.*;
-import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
+import com.tindung.model.Brand;
+import com.tindung.model.Category;
+import com.tindung.repository.UserRepository;
+import com.tindung.repository.brandsRepository;
+import com.tindung.repository.categorysRepository;
+import com.tindung.repository.ordersRepository;
+import com.tindung.repository.productsRepository;
 
 @Controller
 @RequestMapping("admin")

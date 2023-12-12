@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 
 import com.tindung.service.*;
 import com.tindung.repository.*;
+import com.tindung.Impl.*;
 import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
 
 import lombok.AllArgsConstructor;
 

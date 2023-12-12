@@ -14,10 +14,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import com.tindung.service.*;
-import com.tindung.repository.*;
-import com.tindung.model.*;
-import com.tindung.ServiceImpl.*;
+import com.tindung.model.Order;
+import com.tindung.model.Product;
+import com.tindung.model.User;
+import com.tindung.repository.UserRepository;
+import com.tindung.repository.orderDetailsRepository;
+import com.tindung.repository.ordersRepository;
+import com.tindung.repository.productsRepository;
 
 @Controller
 @RequestMapping("admin")
