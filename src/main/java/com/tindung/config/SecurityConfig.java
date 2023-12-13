@@ -85,9 +85,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf(csrf -> csrf.disable())
                 .cors(cors -> cors.disable());
-
-        http
-                .authorizeRequests(requests -> requests
+        http.authorizeRequests(requests -> requests
                         .antMatchers("/assets/**", "/", "logout", "/login**", "/home", "/shop/**",
                                 "/error**", "/api/**", "/reset-password", "/codeVerification", "/resendOtp",
                                 "/new-password", "/rest/productdetails", "/rest/products", "/rest/productsbycate/**",

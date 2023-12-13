@@ -2,13 +2,9 @@ package com.tindung.config;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
-
 import jakarta.servlet.http.HttpServletRequest;
-
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
+
 import java.util.*;
 
 public class VnpayConfig {

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:fragment="user(title,view)">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title th:replace="${title}"></title>
+  <script th:src="@{/assets/js/app.js}"></script>
+  <script th:src="@{https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js}"></script>
+</head>
+
+<body ng-app="my-app">
+  <header th:insert="~{/user/layout/menu.html}"></header>
+  <main th:replace="${view}"></main>
+  <footer th:insert="~{/user/layout/footer.html}"></footer>
+  <div id="fb-root">
+  </div>
+  
+  <div id="social-icons">
+    <a href="https://www.facebook.com/messages/t/100041357677833" target="_blank" class="social-icon">
+      <img src="https://cdn-icons-png.flaticon.com/128/124/124010.png" alt="Facebook Logo">
+    </a>
+    <a href="https://chat.zalo.me/?phone=0977842904" target="_blank" class="social-icon">
+      <img src="https://banghieuminhkhang.com/upload/Thu-vien/logo-zalo-vector-6.jpg" alt="Zalo Logo" width="50"
+        height="50">
+    </a>
+  </div>
+</body>
+
+</html>

@@ -52,7 +52,6 @@ public class BrandAdminRestController {
             existing.setBrandName(update.getBrandName());
             existing.setImage(update.getImage());
             existing.setActive(update.isActive() == true);
-
             Brand save = dmdao.save(existing);
             return ResponseEntity.ok(save);
         } catch (Exception e) {
