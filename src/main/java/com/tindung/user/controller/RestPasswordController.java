@@ -69,7 +69,6 @@ public class RestPasswordController {
             ClassPathResource resource = new ClassPathResource("templates/taikhoan/formemail/formemail.html");
             byte[] templateBytes = FileCopyUtils.copyToByteArray(resource.getInputStream());
             String template = new String(templateBytes, "UTF-8");
-
             // Thay thế giá trị động trong template
             template = template.replace("[[formattedDateTime]]", formattedDateTime)
                     .replace("[[generated_OTP]]", generated_OTP.replace("subject", subject));

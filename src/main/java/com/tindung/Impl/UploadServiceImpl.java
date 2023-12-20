@@ -14,7 +14,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.tindung.service.UploadService;
 
-
 @Service
 public class UploadServiceImpl implements UploadService {
     @Autowired

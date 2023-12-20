@@ -8,8 +8,6 @@ import org.springframework.stereotype.Service;
 import com.tindung.repository.brandsRepository;
 import com.tindung.service.BrandsService;
 
-
-
 @Service
 public class BrandServiceImpl implements BrandsService {
     @Autowired
